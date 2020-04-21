@@ -12,14 +12,17 @@
     .container > .row {
         width: 700px;
         margin: 0 calc( (100% - 700px) /2);
+    }
 }
 @media (max-width: 800px) {
     .container > .row {
         width: 500px;
         margin: 0 calc(50% - 250px);
+    }
 }
 @media (max-width: 600px) {
     .container > .row {
         width: calc(100% - 40px);
         margin: 0 20px;
+    }
 }
