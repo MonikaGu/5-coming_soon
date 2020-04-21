@@ -1,12 +1,29 @@
 .container {
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: rgba(255, 250, 240, 0.082);
+    padding: 80px 0;
+    background-color: #ffffff;
 }
 
     .container > .row {
         width: 1000px;
-        margin-left: calc( (100% - 1000px) /2);
+        margin: 0 calc( (100% - 1000px) /2);
         background-color: yellow;
     }
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 700px;
+        margin: 0 calc( (100% - 700px) /2);
+        background-color: pink;
+}
+@media (max-width: 800px) {
+    .container > .row {
+        width: 500px;
+        margin: 0 calc(50% - 250px);
+        background-color: blue;
+}
+@media (max-width: 600px) {
+    .container > .row {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        background-color: greenyellow;
+}
